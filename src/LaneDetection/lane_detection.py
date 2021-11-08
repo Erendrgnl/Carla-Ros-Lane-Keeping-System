@@ -4,8 +4,7 @@ from sensor_msgs.msg import Image
 import cv2
 from threading import Thread
 
-import os
-from lane_detection.models import laneNet_class
+from LaneDetection.models import laneNet_class
 
 net = None
 
