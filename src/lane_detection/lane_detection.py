@@ -1,4 +1,3 @@
-from operator import le
 import rospy
 import numpy as np
 from sensor_msgs.msg import Image
@@ -6,7 +5,7 @@ import cv2
 from threading import Thread
 
 import os
-from laneNet.tools import laneNet_class
+from model.laneNet.tools import laneNet_class
 
 net = None
 
