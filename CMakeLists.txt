@@ -162,6 +162,8 @@ include_directories(
 ## in contrast to setup.py, you can choose the destination
 catkin_install_python(PROGRAMS
   src/LaneDetection/lane_detection.py
+  src/LaneDetection/lane_detection_publisher.py
+  src/LaneDetection/read_img.py
   DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
 )
 
