@@ -5,7 +5,7 @@ import cv2
 from threading import Thread
 
 import os
-from model.laneNet.tools import laneNet_class
+from lane_detection.models import laneNet_class
 
 net = None
 
