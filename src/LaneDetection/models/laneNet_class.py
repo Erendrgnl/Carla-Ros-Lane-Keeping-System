@@ -1,20 +1,16 @@
-import argparse
-import os.path as ops
-import time
-
 import cv2
-import matplotlib.pyplot as plt
 import numpy as np
 import tensorflow as tf
+import os
 import sys
 
-sys.path.append(r"/home/eren/Documents/Carla/carla-ros-bridge/catkin_ws/src/ros-bridge/Carla_Eren/src/LaneKeepingAsistant/laneNet")
+r_path = os.path.dirname(os.path.abspath(__file__))
+sys.path.append(os.path.join(r_path,"LaneNet"))
 
+import lanenet
+#from lanenet_model import lanenet_postprocess
+import parse_config_utils
 
-from lanenet_model import lanenet
-from lanenet_model import lanenet_postprocess
-from local_utils.config_utils import parse_config_utils
-from local_utils.log_util import init_logger
 
 #CFG = parse_config_utils.lanenet_cfg
 #LOG = init_logger.get_logger(log_file_name_prefix='lanenet_test')
