@@ -14,8 +14,8 @@ Ros bridge
 
 
 ### What will be added
-- [✓] ~~Lane detection algortihm~~
-- [ ] Ros nodes will be update
+- [✓] Lane detection algortihm
+- [✓] Ros nodes will be update
 - [ ] MPC controller implementation
 - [ ] Kalman filter
 
